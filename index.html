@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema1-app3.min.css"/>
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/> -->
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap/js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/muestra2.jpg','imagenes/calentamiento2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Contaminación</h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Definición</h2>
+<p>Semuestra la definición sobre el concepto &quot;contaminación&quot;</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de contaminación</h2>
+<p>Se muestra los diferentes tipos de contaminación que existen</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Consecuencias</h2>
+<p>Se muestran las consecuencias que puede provocar la contaminacion</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Reciclaje</h2>
+<p>Se muestra el concepto de reciclaje y sus beneficios</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Medidas preventivas</h2>
+<p>Se muestran las acciones que se pueden realizar para reducir la contaminación</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Contaminación en mi entorno</h2>
+<p>Se muestran la contaminación que existe cerca del lugar donde vivo</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" width="46" height="46">
+</div>
+<div>
+<h4> Aplicación Tres </h4>
+<h4>Josué Chora Martínez</h4
+></div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Definición</h1>
+</div>
+
+<div data-role="content">
+<div>
+<h2> La contaminación es la introducción de algún tipo de sustancia o energía que atentará contra el normal funcionamiento y equilibrio que ostentaba el medio inicialmente, provocando además un daño casi irreversible.</h2>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres, JCM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Tipos de contaminación</h1>
+</div>
+<div data-role="content" >
+<div>
+<h2>Los diferentes tipos de contaminación dependen de los determinados factores y que afectan a cada ambiente</h2>
+
+<h3>Contaminación del suelo</h3>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div><img src="imagenes/tipos1.jpg" width="40%" height="40%"></div>
+</div>
+</div> 
+
+<h4>Es la presencia de compuestos químicos hechos por el hombre u otra alteración al ambiente natural del mismo</h4>
+
+<h3>Contaminación radioactiva</h3>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra:</h1>
+<div><img src="imagenes/tipos2.png" width="30%" height="30%"></div>
+</div>
+</div> 
+
+<h4>Es toda aquella contaminación tanto en el aire, el suelo o agua, producida por el uso de sustancias radioactivasde origen naturalo artificial, sustancias derivadas de la energia nuclear y las centrales termonucleares</h4>
+
+<h3>Contaminación visual</h3>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div><img src="imagenes/tipos3.jpg" width="40%" height="40%"></div>
+</div>
+</div> 
+
+<h4>Es todo aquello que afecta o perturbala visualización de una determinada zona o rompe la estetica del paisaje. Algunos elementos que causan esta contaminación son: Vllas publicitarias, antenas de TV, graftis. </h4>
+
+<h3>Contaminación lumínica</h3>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div><img src="imagenes/tipos4.jpg" width="40%" height="40%"></div>
+</div>
+</div> 
+
+<h4>Es un concepto que hace referencia al exceso de iluminación en zonas no deseadas. Es un sinónimo de baja eficiencia y desperdicio energético.</h4>
+
+<h3><a href="http://www.who.int/mediacentre/factsheets/fs391/es/">Contaminación del agua</a></h3>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div><img src="imagenes/tipos5.jpg" width="40%" height="40%"></div>
+</div>
+</div> 
+
+<h4>El agua contaminada y el saneamiento deficiente están relacionados con la transmisión de enfermedades como el cólera, otras diarreas, la disentería, la hepatitis A, la fiebre tifoidea y la poliomielitis. Los servicios de agua y saneamiento inexistentes, insuficientes o gestionados de forma inapropiada exponen a la población a riesgos prevenibles para su salud.</h4>
+
+<h3><a href="http://www.who.int/topics/air_pollution/es/">Contaminación del aire</a></h3>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div><img src="imagenes/tipos6.jpg" width="40%" height="40%"></div>
+</div>
+</div> 
+
+<h4>La contaminación del aire representa un importante riesgo medioambiental para la salud. Mediante la disminución de los niveles de contaminación del aire los países pueden reducir la carga de morbilidad derivada de accidentes cerebrovasculares, cánceres de pulmón y neumopatías crónicas y agudas, entre ellas el asma.
+
+Cuanto más bajos sean los niveles de contaminación del aire mejor será la salud cardiovascular y respiratoria de la población, tanto a largo como a corto plazo.</h4>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres, JCM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Consecuencias</h1>
+</div>
+  
+
+<div data-role="content" >
+<div>
+<h3>Más de una cuarta parte de las defunciones de niños menores de cinco años son consecuencia de la contaminación ambiental. </h3>
+
+<h3>Cada año, las condiciones insalubres del entorno, tales como la contaminación del aire en espacios cerrados y en el exterior, la exposición al humo de tabaco ajeno, la insalubridad del agua, la falta de saneamiento y la higiene inadecuada, causan la muerte de 1,7 millones de niños menores de cinco años.</h3>
+
+<h3>361 000 niños menores de cinco años fallecen a causa de enfermedades diarreicas debidas al acceso insuficiente a agua salubre, saneamiento e higiene.</h3>
+
+<h3>200 000 niños menores de cinco años mueren a causa de lesiones o traumatismos involuntarios relacionados con el medio ambiente, como envenenamientos, caídas y ahogamientos.</h3>
+
+<h3>Están aumentando las temperaturas y las concentraciones de dióxido de carbono, factores que favorecen la producción de polen, que se ha asociado a un incremento de las tasas de asma en los niños.</h3>
+
+<h2><a href="http://www.nationalgeographic.es/medio-ambiente/que-es-el-calentamiento-global">Calentamiento global</a></h2>
+
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/calentamiento2.jpg',1)"><img src="imagenes/calentamiento1.jpg" width="40%" height="40%" id="Image8"></a> 
+
+<h3>El rápido aumento de los gases de invernadero es un problema porque está cambiando el clima tan rápido que algunos seres vivos no pueden adaptarse. Igualmente, un clima nuevo y más impredecible impone desafíos únicos para todo tipo de vida.</h3>
+
+<h3>En la actualidad, con las concentraciones de gases de invernadero aumentando, las capas de hielo que permanecen en la Tierra (como Groenlandia y la Antártida) también comienzan a derretirse. Esta agua sobrante podría hacer que aumente considerablemente el nivel del mar.</h3>
+
+<h3>tormentas mayores y más intensas, más lluvia seguida de sequías más prolongadas e intensas (un desafío para los cultivos), cambios en los ámbitos en los que pueden vivir los animales y pérdida del suministro de agua que históricamente provenía de los glaciares.</h3>
+</div></div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres, JCM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Reciclaje</h1>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de muestra</h1>
+<div><img src="imagenes/reciclaje2.png" width="40%" height="40%"></div>
+</div>
+</div>      
+
+<div data-role="content" >
+<div>
+<h2>El Reciclaje transforma materiales usados, que de otro modo serían simplemente desechos, en recursos muy valiosos. La recopilación de botellas usadas, latas, periódicos, etc. son reutilizables y de allí a que, llevarlos a una instalación o puesto de recogida, sea el primer paso para una serie de pasos generadores de una gran cantidad de recursos financieros, ambientales y cómo no de beneficios sociales. Algunos de estos beneficios se acumulan tanto a nivel local como a nivel mundial.</h2>
+
+<h1>Beneficios del Reciclaje </h1>
+<h2><p>El Reciclaje protege y amplía empleos de fabricación y el aumento de la competitividad en EE.UU.</p>
+<p>Reduce la necesidad de vertederos y del proceso de incineración</p>
+<p>Evita la contaminación causada por la fabricación de productos de materiales vírgenes</p>
+<p>Ahorra energía</p>
+<p>Reduce las emisiones de Gases de efecto invernadero que contribuyen al cambio climático y global</p>
+<P>Ahorra en Recursos naturales como son el uso de la madera, el agua y los minerales</P>
+<p>Ayuda a mantener y proteger el medio ambiente para las generaciones futuras</p></h2>
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres, JCM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Medidas preventivas</h1>
+</div>
+
+<div data-role="content">
+<div>
+<h2>Las materias primas que entran al proceso. La utilización de materias primas de mayor calidad y pureza evita la generación de residuos no deseados, incrementa la eficiencia de los procesos y aumenta la vida útil de los equipos. También la sustitución de materias primas por otros materiales menos contaminantes o peligrosos redundará en la generación de residuos menos contaminantes y reducirá los costos de tratamiento o disposición de los mismos</h2>
+
+<h2>Los productos. Muchos beneficios pueden obtenerse mediante el rediseño de los productos: es posible reducir la cantidad de materiales utilizados con las consecuentes ventajas económicas y ambientales al reducir la demanda por recursos naturales, además de disminuir los impactos ambientales que se generan durante su proceso de producción y durante su utilización y consumo</h2>
+
+<h2>Buenas y mejores prácticas operativas que incluyen medidas administrativas y procedimentales para disminuir la generación de contaminantes como son  el desarrollo e instrumentación de programas de producción limpia</h2>
+
+<h2>Cambios tecnológicos orientados a modificaciones en el producto, el proceso o el equipo para aumentar la eficiencia en el uso de materias primas y reducir la generación de residuos y emisiones</h2>
+
+<h2>Reuso y reciclamiento tanto del producto y/o sus componentes, como de los distintos residuos que se generan durante el proceso de su producción, ya sea en éste mismo o en otros procesos</h2>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres, JCM</h4>
+</div>
+</div>
+</div></div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Contaminación en mi entorno</h1>
+</div>
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/20170403_125848.jpg" alt="20170403_125848" title="20170403_125848" id="wows1_0"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/20170403_130245.jpg" alt="http://wowslider.com/" title="20170403_130245" id="wows1_1"/></a></li>
+		<li><img src="data1/images/20170403_130541.jpg" alt="20170403_130541" title="20170403_130541" id="wows1_2"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="20170403_125848"><span><img src="data1/tooltips/20170403_125848.jpg" alt="20170403_125848"/>1</span></a>
+		<a href="#" title="20170403_130245"><span><img src="data1/tooltips/20170403_130245.jpg" alt="20170403_130245"/>2</span></a>
+		<a href="#" title="20170403_130541"><span><img src="data1/tooltips/20170403_130541.jpg" alt="20170403_130541"/>3</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<div data-role="content">
+<div>
+<h2>¿Que podemos hacer para reducir la contaminació?</h2>
+
+<h3>Considero que hacer platicas sobre la contaminación no funcionaria ya que la gente no sistiria a dichas platicas</h3>
+
+<h3>Una acción seria: Si un vecino tira su basura en la calle y algun otro lo vio, recogerla y entregarsela</h3>
+
+<h3>Poner botes de basura en cada esquina</h3>
+
+<h3>Pedir vigilancia para ver que nadie tire basura en las calles</h3>
+
+<h3>Ayudar a personas mayores para tirar su basura cuando pase el camion de la basura.</h3></div>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres, JCM</h4>
+</div>
+</div>
+
+</body>
+</html>
